@@ -1,5 +1,5 @@
 ## Description
-    This is a simple Python script used to validate email accounts that belong to Office 365 tenants. 
+    This is a simple Python3 script used to validate email accounts that belong to Office 365 tenants. 
     This script takes either a single email address or a list of email addresses as input, 
     sends a request to Office 365 without a password, and looksfor the the "IfExistsResult"
     parameter to be set to 0 for a valid account. Invalid accounts will return a 1.
@@ -10,9 +10,9 @@
     Additionally, the script can output valid email addressesto a file with the -o parameter.
     
     Examples:
-    o365creeper.py -e test@example.com
-    o365creeper.py -f emails.txt
-    o365creeper.py -f emails.txt -o validemails.txt
+    python3 o365creeper.py -e test@example.com
+    python3 o365creeper.py -f emails.txt
+    python3 o365creeper.py -f emails.txt -o validemails.txt
 
 ## NOTE
     Office 365 will flag these requests randomly after repeated, successive attempts to validate the 
